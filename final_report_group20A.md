@@ -155,8 +155,10 @@ During our EDA, we had already discovered that the majority or 85%, of the custo
 
  Moreover, we can also see a significant relationship between card category and churn rates. Thus, both of them have a strong correlation.
 
+ [If you would like more of my analysis , please click here.](https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/analysis/analysis(Ajneya).ipynb)
 
-## Conclusion
+
+## Conclusion for Research Question:
 
 The following conclusions can be drawn based on the dataset analysis and the research question of how demographics such as age and income affect credit card churn rates:
 
