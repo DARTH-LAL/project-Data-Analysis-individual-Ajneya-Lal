@@ -10,7 +10,7 @@ EDA aims to provide a thorough understanding of the data and prepare for futureÂ
 
 After data processing and cleaning, we plotted the distribution of customers in the dataset based on existing and attrited customers. To see the trend of customer behaviour is this dataset.
 
-![](/images/Churn_rates_plot.png)
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/Churn_rates_plot.png />
 
 The graph above shows that the data consists mainly of existing customers. Thus the dataset is imbalanced as the dataset has more values for existing customers than churned customers. However, it does not affect our research question since there is still a churn rate of 16.07% present in the dataset. Therefore, we will identify the factors influencing customer behaviour and patterns of these 16.07% attrited customers.
 
