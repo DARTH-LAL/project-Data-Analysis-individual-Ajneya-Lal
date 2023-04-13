@@ -6,4 +6,4 @@ Additionally, we hope to understand the process of data analysis using simple da
 
 ## Contracted Grade
 
-For this project, we agree to contract for a A+.
+For this project, we agree to contract for a A.
