@@ -1,8 +1,6 @@
-# Group 20 - CCC
+# Individual Project - Ajneya Lal
 
 ## Milestone 1
-
-Details for Milestone are available on Canvas (left sidebar, Course Project).
 
 ## Describe your topic/interest in about 150-200 words
 
@@ -20,15 +18,13 @@ The owner of this dataset is a software engineer at Wipro.
 
 ## Team Members
 
-- Person 1: Disha: My name is Disha and I plan to major in economics
-- Person 2: Vaishali: My name is Vaishali Raju. I am in the faculty of Management, with a minor in Economics.
-- Person 3: Ajneya: My name is Ajneya and I love maths!
+- Person 1: Ajneya: My name is Ajneya and I love maths!
 
 ## Images
 
-{You should use this area to add a screenshot of an interesting plot, or of your dashboard}
+### Image of Dashboard
 
-<img src ="images/test.png" width="100px">
+<img src ="/Users/poojalal/Desktop/DATA301/-project-group-individual-Ajneya-Lal/images " width="100px">
 
 ## References
 
