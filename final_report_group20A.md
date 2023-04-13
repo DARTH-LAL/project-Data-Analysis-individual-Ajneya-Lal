@@ -144,11 +144,32 @@ During our EDA, we had already discovered that the majority or 85%, of the custo
 
   The graph above shows that the ratio churn rates are the highest for customers in the less than 40k category. Therefore, the churn rate is the highest for customers in the less than $ 40k income category.
 
- Thus, it is safe to conclude customers with a low income are more likely to churn.
+ Thus, it is safe to conclude customers with a low income are more likely to churn. Also, the churn rates for the income category are significant. Therefore there is a strong correlation between the income category and churn rates.
 
 
  ### Analysis for correlation between card category and churn rates:
 
+ From our EDA, we already know that most of the customers are in the blue card category, with 98% being in this category. Therefore, taking churn rates based on this would not provide accurate patterns or trends. So, to overcome a similar challenge, the graph below showcases the churn rate for card category based on the ratio of each card category. By doing, this, we get a more accurate graph.
+ 
+ <img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/15.png />
+
+ Moreover, we can also see a significant relationship between card category and churn rates. Thus, both of them have a strong correlation.
 
 
 ## Conclusion
+
+The following conclusions can be drawn based on the dataset analysis and the research question of how demographics such as age and income affect credit card churn rates:
+
+Firstly, the dataset analysis revealed that churn rates increase with customer age, indicating that older customers are more likely to churn. This could result from several factors, including shifting spending patterns, unstable finances, or a desire to consider different options. The retention of senior consumers should be a top priority for credit card businesses, and this may be done by offering them incentives and prizes to do so. For instance, they provide exclusive benefits and discounts to loyal clients, tailored financial advice, or superior customer support. Companies might also utilise data analytics to identify the reasons behind customer churn and address them proactively.
+
+Secondly, Churn rates differ significantly by marital status, with married and single customers having the highest and Divorced customers having the lowest. This implies that to meet their particular wants and concerns more effectively, credit card firms should consider adjusting their marketing and retention methods to individual and marital status. For instance, they may provide single consumers with tailored budgeting tools or married couples with joint credit cards with attractive benefits. Additionally, banks might do surveys or focus groups to learn more about the elements that affect customer happiness and retention in each marital status category.
+
+Furthermore, churn rates differ slightly by gender, as females have a slightly higher churn rate than male customers. Even though the difference is almost insignificant, credit card companies should still be aware of gender differences in financial behaviour and design their products and services accordingly. For instance, they may provide credit cards with features that appeal more to women, like rewards for shopping or vacation, or they could provide financial education and services that address issues that affect many female consumers, such as student loan debt or retirement planning.
+
+Moreover, the dataset analysis showed that churn rates differ significantly by income categories, with customers earning less than 40k per year having the highest churn rates and those earning $120k+ having the lowest. This emphasises how crucial it is to customise marketing and retention plans for particular income brackets to better address their specific wants and concerns. For instance, credit card firms might provide low-income consumers with more flexible payment alternatives, such as reduced interest rates or longer repayment terms. For wealthy clients, they might give exclusive benefits or concierge services that fit their opulent way of life.
+
+The dataset analysis revealed that churn rates differ significantly by education level, with the Doctorate education level having the highest churn rates. This proposes that credit card companies investigate the causes of this trend and develop plans to alleviate the worries of well-educated consumers. For instance, they can provide credit cards with rewards for continuing education or professional development or collaborate with educational organisations to provide cardholders with special perks. Additionally, they may carry out research to comprehend the financial priorities and aims of highly educated clients so that they can build goods and services that suit their requirements.
+
+Finally, the dataset analysis showed that churn rates differ significantly by card categories, with blue card category customers having the highest and Platinum card category customers having the lowest churn rates. This implies that to serve each card category's specific wants and concerns more effectively, credit card providers should customise their marketing and retention efforts. They may, for instance, provide premium cardholders with more individualised customer support or create marketing campaigns highlighting the particular advantages and features of each card category. Additionally, they could use data analytics to identify factors contributing to customer loyalty in each card category and design retention strategies accordingly.
+
+In conclusion, to answer my research question of how demographics affect credit card churn rates? All demographic variables present in this data(customer age, marital status, gender, income category, education level, card category) correlate either with the increase or decrease of churn risk. While some demographics, such as age, card category, income category and marital status, have a strong positive correlation with the increase in churn rates. Demographics such as gender and education level have a weak positive correlation with increased churn rates.
