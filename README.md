@@ -24,7 +24,7 @@ The owner of this dataset is a software engineer at Wipro.
 
 ### Image of Dashboard
 
-[![Alt text](/Users/poojalal/Desktop/DATA301/-project-group-individual-Ajneya-Lal/images)]
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/Final_Dashboard_Image.png />
 
 
 ## References
