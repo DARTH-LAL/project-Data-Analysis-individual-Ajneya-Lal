@@ -14,36 +14,38 @@ After data processing and cleaning, we plotted the distribution of customers in 
 
 The graph above shows that the data consists mainly of existing customers. Thus the dataset is imbalanced as the dataset has more values for existing customers than churned customers. However, it does not affect our research question since there is still a churn rate of 16.07% present in the dataset. Therefore, we will identify the factors influencing customer behaviour and patterns of these 16.07% attrited customers.
 
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/1.png />
+
 From the graph above, the median age of customers who have churned is slightly higher than that of customers who have not churned. Thus, indicating a correlation between age and churn rate. However, the correlation requires further analysis for a concrete conclusion.
 
-The second plot used to analyse correlations is a box plot to portray the relationship between the customer credit limit and churn rate. This graph helps analyse the relationship between the credit limit and customer churn rates.
+The third plot used to analyse correlations is a box plot to portray the relationship between the customer credit limit and churn rate. This graph helps analyse the relationship between the credit limit and customer churn rates.
 
 
-<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/1.png />
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/2.png />
 
 From the graph above, we can see that the attrited customers have significantly more outliers than existing customers. Thus, indicating high variability in the behaviour of attrited customers.
 
 The plot below is a bar plot which displays the relationship between customer gender and churn rate.
 
-![Churn Rates Plot](/Users/poojalal/Desktop/DATA301/-project-group-group20A/images/Churn_rates_plot.png)
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/3.png />
 
 The graph showcases the trend for customers based on their gender. It can be observed that the number of both attrited and existing customers is higher for female customers. However, it is important to consider that the dataset also contains more female customers. Thus, further analysis is required for a concrete conclusion.
 
 The following graph highlights the relationship between education level and churn rate, which is necessary for our research as it will tell us the distribution of the customers in the dataset based on their education level.
 
-![Churn Rates Plot](/Users/poojalal/Desktop/DATA301/-project-group-group20A/images/Churn_rates_plot.png)
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/4.png />
 
 From the graph above, the churn rates for graduate education level customers are the highest. Still, it is also important to remember that the number of graduate customers is significantly higher. However, further analysis is required for a concrete conclusion.
 
 The graph below shows the relationship between marital status and churn rates, which is essential as it aids in comprehending how marital status affects the churn rate for credit card firms.
 
-![Churn Rates Plot](/Users/poojalal/Desktop/DATA301/-project-group-group20A/images/Churn_rates_plot.png)
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/5.png />
 
 The graph shows that the churn rate for married and single customers is the highest. Still, it is also essential to consider that the number of married and single customers is significantly higher. Therefore, further analysis is required for a concrete conclusion.
 
 The following graph highlights the relationship between income category and churn rate, which can help understand the impact of income on customer churn for credit card companies.
 
-![Churn Rates Plot](/Users/poojalal/Desktop/DATA301/-project-group-group20A/images/Churn_rates_plot.png)
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/6.png />
 
 
 From the above graph, we can conclude that the churn rates are the highest for customers in the less than 40k income category. Still, it is also essential to consider that the number of customers in the less than $40k income category is also significantly higher. Therefore, further analysis is required for a concrete conclusion.
@@ -51,7 +53,7 @@ From the above graph, we can conclude that the churn rates are the highest for c
 The last graph used in this EDA is a count plot that showcases the correlation between the card category of customers and churn rate. The count plot shows the distribution of consumers among 
 various Card Categories and the proportion of customers who churned or not in each category.
 
-![Churn Rates Plot](/Users/poojalal/Desktop/DATA301/-project-group-group20A/images/Churn_rates_plot.png)
+!<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/7.png />
 
 From the graph above, it can be observed that the churn rates are the highest for customers in the blue card category. However, it is also essential to consider that the number of customers in the blue card category is significantly higher. Therefore, further analysis is required for a concrete conclusion.
 
@@ -86,13 +88,13 @@ The demographic variables identified from the dataset and are used in this analy
 
 ### Analysis for correlation between customer age and churn rates:
 
-![Churn Rates Plot](/Users/poojalal/Desktop/DATA301/-project-group-group20A/images/Churn_rates_plot.png)
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/9.png />
 
 The graph above is a line plot showing the churn rate distribution for each group. For example, the chart above shows that the churn rates are the highest among the 65 to 70 age group.
 
 Next, to understand the correlation between customer age and churn rates. I will be using the machine learning model of linear regression. Below is the output for a simple linear regression performed for this correlation.
 
-![Churn Rates Plot](/Users/poojalal/Desktop/DATA301/-project-group-group20A/images/Churn_rates_plot.png)
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/10.png />
 
 From the linear regression it can be concluded that : 
 1. For every one increase in customer age , we can expect an increase of 0.0008 in churn rate , as the coefficient of customer age is 0.0008. 
@@ -105,7 +107,8 @@ Therefore, it is safe to conclude there is a positive correlation between custom
 
 During our EDA, we had already learnt that more female customers were present in the dataset than male customers. Therefore, taking churn rates based on this would not provide accurate patterns or trends. So, to overcome this challenge, the below graph showcases the churn rate for gender based on the ratio of each gender. By doing, this, we get a more accurate graph.
 
-![Churn Rates Plot](/Users/poojalal/Desktop/DATA301/-project-group-group20A/images/Churn_rates_plot.png)
+
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/11.png />
 
 From the graph above, it can be observed that females still have higher churn rates than males based on the ratio. Therefore, we can conclude that females have higher churn rates than men.
 
@@ -115,7 +118,8 @@ We have not performed linear regression for this correlation, as only two variab
 
  From our EDA, we already know that more customers are present in graduate-level education. Therefore, taking churn rates based on this would not provide accurate patterns or trends. So, to overcome a similar challenge, the graph below showcases the churn rate for education level based on the ratio of each education level. By doing, this, we get a more accurate graph.
 
- ![Churn Rates Plot](/Users/poojalal/Desktop/DATA301/-project-group-group20A/images/Churn_rates_plot.png)
+ 
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/12.png />
 
  The graph above shows that the doctorate education level still has a Significantly higher ratio churn rate than the rest of the education levels. Therefore, the doctorate education level has the highest churn rates. The postgraduate education level has the second-highest churn rate. Thus, as the education level increases, the chances of churring also increase.
 
@@ -126,7 +130,7 @@ We have not performed linear regression for this correlation, as only two variab
 During our EDA, we had already discovered that the majority or 85%, of the customers in the dataset either belong to the married or single marital status. Therefore, taking churn rates based on this would not provide accurate patterns or trends. So, to overcome this challenge, the below graph showcases the churn rate for marital status based on the ratio of each marital status. By doing, this, we get a more accurate graph.
 
 
- ![Churn Rates Plot](/Users/poojalal/Desktop/DATA301/-project-group-group20A/images/Churn_rates_plot.png)
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/13.png />
 
  From the graph above, it can be observed that based on the ratio of each marital status, the married marital status has the highest churn rate ratio, with the single marital status being the second highest. The churn rates for marital status are significant, meaning there is a strong correlation between marital status and churn rates.
 
@@ -136,7 +140,7 @@ During our EDA, we had already discovered that the majority or 85%, of the custo
 
  Our EDA shows that most customers are in the less than $ 40k income category. Therefore, taking churn rates based on this would not provide accurate patterns or trends. So, to overcome a similar challenge, the graph below showcases the churn rate for the income category based on the ratio of the income category. By doing, this, we get a more accurate graph.
 
-  ![Churn Rates Plot](/Users/poojalal/Desktop/DATA301/-project-group-group20A/images/Churn_rates_plot.png)
+ <img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/14.png />
 
   The graph above shows that the ratio churn rates are the highest for customers in the less than 40k category. Therefore, the churn rate is the highest for customers in the less than $ 40k income category.
 
