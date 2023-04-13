@@ -1,4 +1,4 @@
-# Individual Project - Ajneya Lal
+# Project Group 20A (Ajneya Lal)
 
 ## Milestone 1
 
