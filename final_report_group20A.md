@@ -19,7 +19,7 @@ From the graph above, the median age of customers who have churned is slightly h
 The second plot used to analyse correlations is a box plot to portray the relationship between the customer credit limit and churn rate. This graph helps analyse the relationship between the credit limit and customer churn rates.
 
 
-<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/Churn_rates_plot.png />
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/1.png />
 
 From the graph above, we can see that the attrited customers have significantly more outliers than existing customers. Thus, indicating high variability in the behaviour of attrited customers.
 
