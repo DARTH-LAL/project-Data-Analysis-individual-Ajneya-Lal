@@ -1,0 +1,2356 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Age bin size' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='7.0'>
+        <calculation class='tableau' formula='7.0' />
+        <range granularity='1.0' max='10.0' min='2.0' />
+      </column>
+      <column caption='Final Bin size' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='2.'>
+        <calculation class='tableau' formula='2.' />
+        <range granularity='1.0' max='10.0' min='2.0' />
+      </column>
+    </datasource>
+    <datasource caption='processeddata(analysis3)' inline='true' name='federated.0qpshyi0h4w42s19zfif11d2y2he' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='newdf2' name='textscan.1rzos3r1ei9rbf1gh9dzu13v09la'>
+            <connection class='textscan' directory='/Users/poojalal/Desktop/DATA301/project-group-group-20/data/processed' filename='newdf2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1rzos3r1ei9rbf1gh9dzu13v09la' name='newdf2.csv' table='[newdf2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Attrition_Flag' ordinal='0' />
+            <column datatype='integer' name='Customer_Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='integer' name='Dependent_count' ordinal='3' />
+            <column datatype='string' name='Education_Level' ordinal='4' />
+            <column datatype='string' name='Marital_Status' ordinal='5' />
+            <column datatype='string' name='Income_Category' ordinal='6' />
+            <column datatype='string' name='Card_Category' ordinal='7' />
+            <column datatype='integer' name='Months_on_book' ordinal='8' />
+            <column datatype='integer' name='Months_Inactive_12_mon' ordinal='9' />
+            <column datatype='real' name='Credit_Limit' ordinal='10' />
+            <column datatype='integer' name='Total_Revolving_Bal' ordinal='11' />
+            <column datatype='real' name='Total_Amt_Chng_Q4_Q1' ordinal='12' />
+            <column datatype='integer' name='Total_Trans_Amt' ordinal='13' />
+            <column datatype='real' name='Avg_Utilization_Ratio' ordinal='14' />
+            <column datatype='string' name='Age_Bin' ordinal='15' />
+            <column datatype='integer' name='Churn' ordinal='16' />
+            <column datatype='integer' name='Attrition_Flag_Churned' ordinal='17' />
+            <column datatype='integer' name='Customer_Count' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1rzos3r1ei9rbf1gh9dzu13v09la' name='newdf2.csv' table='[newdf2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Attrition_Flag' ordinal='0' />
+            <column datatype='integer' name='Customer_Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='integer' name='Dependent_count' ordinal='3' />
+            <column datatype='string' name='Education_Level' ordinal='4' />
+            <column datatype='string' name='Marital_Status' ordinal='5' />
+            <column datatype='string' name='Income_Category' ordinal='6' />
+            <column datatype='string' name='Card_Category' ordinal='7' />
+            <column datatype='integer' name='Months_on_book' ordinal='8' />
+            <column datatype='integer' name='Months_Inactive_12_mon' ordinal='9' />
+            <column datatype='real' name='Credit_Limit' ordinal='10' />
+            <column datatype='integer' name='Total_Revolving_Bal' ordinal='11' />
+            <column datatype='real' name='Total_Amt_Chng_Q4_Q1' ordinal='12' />
+            <column datatype='integer' name='Total_Trans_Amt' ordinal='13' />
+            <column datatype='real' name='Avg_Utilization_Ratio' ordinal='14' />
+            <column datatype='string' name='Age_Bin' ordinal='15' />
+            <column datatype='integer' name='Churn' ordinal='16' />
+            <column datatype='integer' name='Attrition_Flag_Churned' ordinal='17' />
+            <column datatype='integer' name='Customer_Count' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attrition_Flag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Attrition_Flag]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Attrition_Flag</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customer_Age]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Customer_Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dependent_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dependent_count]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Dependent_count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education_Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Education_Level]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Education_Level</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital_Status]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Marital_Status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Income_Category]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Income_Category</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Card_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Card_Category]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Card_Category</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months_on_book</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Months_on_book]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Months_on_book</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months_Inactive_12_mon</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Months_Inactive_12_mon]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Months_Inactive_12_mon</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit_Limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Credit_Limit]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Credit_Limit</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Revolving_Bal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Revolving_Bal]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Total_Revolving_Bal</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Amt_Chng_Q4_Q1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_Amt_Chng_Q4_Q1]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Total_Amt_Chng_Q4_Q1</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Trans_Amt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Trans_Amt]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Total_Trans_Amt</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_Utilization_Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_Utilization_Ratio]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Avg_Utilization_Ratio</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age_Bin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age_Bin]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Age_Bin</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Churn]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Churn</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attrition_Flag_Churned</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Attrition_Flag_Churned]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Attrition_Flag_Churned</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customer_Count]</local-name>
+            <parent-name>[newdf2.csv]</parent-name>
+            <remote-alias>Customer_Count</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age Bin' datatype='string' name='[Age_Bin]' role='dimension' type='nominal' />
+      <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+      <column caption='Attrition Count' datatype='integer' name='[Attrition_Flag_Churned]' role='measure' type='quantitative' />
+      <column caption='Avg Utilization Ratio' datatype='real' name='[Avg_Utilization_Ratio]' role='measure' type='quantitative' />
+      <column caption='Churn rate' datatype='real' name='[Calculation_2346445788755791872]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([Attrition_Flag_Churned])/sum([Customer_Count])' />
+      </column>
+      <column caption='Active Customers' datatype='integer' name='[Calculation_2346445788756434945]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([Customer_Count]) - sum([Attrition_Flag_Churned])' />
+      </column>
+      <column caption=' Gender(2)' datatype='integer' name='[Calculation_2346445788781817858]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Gender] = &quot;M&quot; THEN 1 else 0 END' />
+      </column>
+      <column caption='Churn rate by Gender' datatype='real' name='[Calculation_2346445788783022083]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Attrition_Flag_Churned])/sum([Calculation_2346445788781817858])' />
+      </column>
+      <column caption='Card Category' datatype='string' name='[Card_Category]' role='dimension' type='nominal' />
+      <column caption='Credit Limit' datatype='real' name='[Credit_Limit]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Customer Age (bin)' datatype='integer' name='[Customer Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Customer_Age]' peg='0' size-parameter='[Parameters].[Parameter 1]' />
+      </column>
+      <column caption='Customer Age' datatype='integer' name='[Customer_Age]' role='measure' type='quantitative' />
+      <column caption='Customer Count' datatype='integer' name='[Customer_Count]' role='measure' type='quantitative' />
+      <column caption='Dependent count' datatype='integer' name='[Dependent_count]' role='measure' type='quantitative' />
+      <column caption='Education Level' datatype='string' name='[Education_Level]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+      <column caption='Marital Status' datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+      <column caption='Months Inactive 12 mon' datatype='integer' name='[Months_Inactive_12_mon]' role='measure' type='quantitative' />
+      <column caption='Months on book' datatype='integer' name='[Months_on_book]' role='measure' type='quantitative' />
+      <column caption='Total Amt Chng Q4 Q1' datatype='real' name='[Total_Amt_Chng_Q4_Q1]' role='measure' type='quantitative' />
+      <column caption='Total Revolving Bal' datatype='integer' name='[Total_Revolving_Bal]' role='measure' type='quantitative' />
+      <column caption='Total Trans Amt' datatype='integer' name='[Total_Trans_Amt]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='newdf2.csv' datatype='table' name='[__tableau_internal_object_id__].[newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A]' role='measure' type='quantitative' />
+      <column-instance column='[Card_Category]' derivation='None' name='[none:Card_Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Education_Level]' derivation='None' name='[none:Education_Level:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Education_Level:nk]' palette='sf_water' type='palette'>
+            <map to='#051c61'>
+              <bucket>&quot;Uneducated&quot;</bucket>
+            </map>
+            <map to='#073e92'>
+              <bucket>&quot;Post-Graduate&quot;</bucket>
+            </map>
+            <map to='#0e6ece'>
+              <bucket>&quot;High School&quot;</bucket>
+            </map>
+            <map to='#2d9ced'>
+              <bucket>&quot;Graduate&quot;</bucket>
+            </map>
+            <map to='#68ceee'>
+              <bucket>&quot;Doctorate&quot;</bucket>
+            </map>
+            <map to='#96f2ee'>
+              <bucket>&quot;College&quot;</bucket>
+            </map>
+            <map to='#96f2ee'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Card_Category:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Blue&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Silver&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Platinum&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Gold&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Income_Category:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;$40K - $60K&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Less than $40K&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;$120K +&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;$80K - $120K&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;$60K - $80K&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Marital_Status:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Divorced&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Single&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Married&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Age bin size' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='7.0'>
+          <calculation class='tableau' formula='7.0' />
+          <range granularity='1.0' max='10.0' min='2.0' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='newdf2.csv' id='newdf2.csv_6176D2800B59493A8F1DCE5A93D3462A'>
+            <properties context=''>
+              <relation connection='textscan.1rzos3r1ei9rbf1gh9dzu13v09la' name='newdf2.csv' table='[newdf2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Attrition_Flag' ordinal='0' />
+                  <column datatype='integer' name='Customer_Age' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='integer' name='Dependent_count' ordinal='3' />
+                  <column datatype='string' name='Education_Level' ordinal='4' />
+                  <column datatype='string' name='Marital_Status' ordinal='5' />
+                  <column datatype='string' name='Income_Category' ordinal='6' />
+                  <column datatype='string' name='Card_Category' ordinal='7' />
+                  <column datatype='integer' name='Months_on_book' ordinal='8' />
+                  <column datatype='integer' name='Months_Inactive_12_mon' ordinal='9' />
+                  <column datatype='real' name='Credit_Limit' ordinal='10' />
+                  <column datatype='integer' name='Total_Revolving_Bal' ordinal='11' />
+                  <column datatype='real' name='Total_Amt_Chng_Q4_Q1' ordinal='12' />
+                  <column datatype='integer' name='Total_Trans_Amt' ordinal='13' />
+                  <column datatype='real' name='Avg_Utilization_Ratio' ordinal='14' />
+                  <column datatype='string' name='Age_Bin' ordinal='15' />
+                  <column datatype='integer' name='Churn' ordinal='16' />
+                  <column datatype='integer' name='Attrition_Flag_Churned' ordinal='17' />
+                  <column datatype='integer' name='Customer_Count' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0qpshyi0h4w42s19zfif11d2y2he'>
+      <datasources>
+        <datasource caption='processeddata(analysis3)' name='federated.0qpshyi0h4w42s19zfif11d2y2he' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0qpshyi0h4w42s19zfif11d2y2he'>
+        <column caption='Card Category' datatype='string' name='[Card_Category]' role='dimension' type='nominal' />
+        <column caption='Education Level' datatype='string' name='[Education_Level]' role='dimension' type='nominal' />
+        <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+        <column caption='Marital Status' datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+        <column-instance column='[Card_Category]' derivation='None' name='[none:Card_Category:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Education_Level]' derivation='None' name='[none:Education_Level:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]'>
+        <groupfilter function='level-members' level='[none:Card_Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]'>
+        <groupfilter function='level-members' level='[none:Education_Level:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]'>
+        <groupfilter function='level-members' level='[none:Income_Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[none:Marital_Status:nk]' />
+          <groupfilter function='member' level='[none:Marital_Status:nk]' member='%null%' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{787CD4C0-D36A-409E-8FCA-FC04CEFED483}' />
+    </worksheet>
+    <worksheet name='Churn Rate by Age Group '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>Chun rates by Age Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processeddata(analysis3)' name='federated.0qpshyi0h4w42s19zfif11d2y2he' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Age bin size' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='7.0'>
+              <calculation class='tableau' formula='7.0' />
+              <range granularity='1.0' max='10.0' min='2.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0qpshyi0h4w42s19zfif11d2y2he'>
+            <column caption='Attrition Count' datatype='integer' name='[Attrition_Flag_Churned]' role='measure' type='quantitative' />
+            <column caption='Card Category' datatype='string' name='[Card_Category]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Customer Age (bin)' datatype='integer' name='[Customer Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Customer_Age]' peg='0' size-parameter='[Parameters].[Parameter 1]' />
+            </column>
+            <column caption='Customer Age' datatype='integer' name='[Customer_Age]' role='measure' type='quantitative' />
+            <column caption='Education Level' datatype='string' name='[Education_Level]' role='dimension' type='nominal' />
+            <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+            <column caption='Marital Status' datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column-instance column='[Card_Category]' derivation='None' name='[none:Card_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Age (bin)]' derivation='None' name='[none:Customer Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Education_Level]' derivation='None' name='[none:Education_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Attrition_Flag_Churned]' derivation='Sum' name='[pcto:sum:Attrition_Flag_Churned:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Attrition_Flag_Churned]' derivation='Sum' name='[sum:Attrition_Flag_Churned:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' scope='cols' value='#ffffff' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='display' class='0' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='19' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Customer Age (bin):ok]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Customer Age (bin):ok]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d8d8d8</color>
+                <color>#c0c0c0</color>
+                <color>#a8a8a8</color>
+                <color>#909090</color>
+                <color>#787878</color>
+                <color>#606060</color>
+                <color>#484848</color>
+                <color>#303030</color>
+                <color>#181818</color>
+                <color>#000000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' />
+              <text column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[pcto:sum:Attrition_Flag_Churned:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0qpshyi0h4w42s19zfif11d2y2he].[pcto:sum:Attrition_Flag_Churned:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]</rows>
+        <cols>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Customer Age (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[Customer Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{A23635CA-6453-4BCE-AA60-6DD7BABFDFB8}' />
+    </worksheet>
+    <worksheet name='Churn Rate by Card Category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='12'>Churn by Card Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processeddata(analysis3)' name='federated.0qpshyi0h4w42s19zfif11d2y2he' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qpshyi0h4w42s19zfif11d2y2he'>
+            <column caption='Attrition Count' datatype='integer' name='[Attrition_Flag_Churned]' role='measure' type='quantitative' />
+            <column caption='Card Category' datatype='string' name='[Card_Category]' role='dimension' type='nominal' />
+            <column caption='Education Level' datatype='string' name='[Education_Level]' role='dimension' type='nominal' />
+            <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+            <column caption='Marital Status' datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column-instance column='[Card_Category]' derivation='None' name='[none:Card_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Education_Level]' derivation='None' name='[none:Education_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Attrition_Flag_Churned]' derivation='Sum' name='[sum:Attrition_Flag_Churned:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='1' />
+            <format attr='stroke-color' value='#ffffff' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='color' data-class='subtotal' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='#ffffff' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='bold' />
+            <format attr='text-format' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='bold' />
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]' value='bold' />
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='9' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]' value='Card Category' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]' />
+              <text column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]</rows>
+        <cols>[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]</cols>
+      </table>
+      <simple-id uuid='{98DC0D5B-52EC-42B5-B6F3-BED52EEFFCFF}' />
+    </worksheet>
+    <worksheet name='Churn Rate by Education'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='12'>Churn by Education</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processeddata(analysis3)' name='federated.0qpshyi0h4w42s19zfif11d2y2he' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qpshyi0h4w42s19zfif11d2y2he'>
+            <column caption='Attrition Count' datatype='integer' name='[Attrition_Flag_Churned]' role='measure' type='quantitative' />
+            <column caption='Card Category' datatype='string' name='[Card_Category]' role='dimension' type='nominal' />
+            <column caption='Education Level' datatype='string' name='[Education_Level]' role='dimension' type='nominal' />
+            <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+            <column caption='Marital Status' datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column-instance column='[Card_Category]' derivation='None' name='[none:Card_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Education_Level]' derivation='None' name='[none:Education_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Attrition_Flag_Churned]' derivation='Sum' name='[sum:Attrition_Flag_Churned:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='1' />
+            <format attr='stroke-color' value='#ffffff' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='color' data-class='subtotal' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='#ffffff' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='bold' />
+            <format attr='text-format' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]</rows>
+        <cols>[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]</cols>
+      </table>
+      <simple-id uuid='{28F7180F-EA43-4E6D-8E06-E0A284FBCC2E}' />
+    </worksheet>
+    <worksheet name='Churn Rate by Income Category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='12'>Churn by Income Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processeddata(analysis3)' name='federated.0qpshyi0h4w42s19zfif11d2y2he' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qpshyi0h4w42s19zfif11d2y2he'>
+            <column caption='Attrition Count' datatype='integer' name='[Attrition_Flag_Churned]' role='measure' type='quantitative' />
+            <column caption='Card Category' datatype='string' name='[Card_Category]' role='dimension' type='nominal' />
+            <column caption='Education Level' datatype='string' name='[Education_Level]' role='dimension' type='nominal' />
+            <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+            <column caption='Marital Status' datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column-instance column='[Card_Category]' derivation='None' name='[none:Card_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Education_Level]' derivation='None' name='[none:Education_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Attrition_Flag_Churned]' derivation='Sum' name='[sum:Attrition_Flag_Churned:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='1' />
+            <format attr='stroke-color' value='#ffffff' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='color' data-class='subtotal' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='#ffffff' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='bold' />
+            <format attr='text-format' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='bold' />
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]' />
+              <text column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]</rows>
+        <cols>[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]</cols>
+      </table>
+      <simple-id uuid='{AAE37E37-3248-4083-BFEB-6157663A85D8}' />
+    </worksheet>
+    <worksheet name='Churn by Gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='TI-Nspire Sans' fontsize='12'>Churn  by Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processeddata(analysis3)' name='federated.0qpshyi0h4w42s19zfif11d2y2he' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qpshyi0h4w42s19zfif11d2y2he'>
+            <column caption='Attrition Count' datatype='integer' name='[Attrition_Flag_Churned]' role='measure' type='quantitative' />
+            <column caption='Card Category' datatype='string' name='[Card_Category]' role='dimension' type='nominal' />
+            <column caption='Education Level' datatype='string' name='[Education_Level]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+            <column caption='Marital Status' datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column-instance column='[Card_Category]' derivation='None' name='[none:Card_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Education_Level]' derivation='None' name='[none:Education_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Attrition_Flag_Churned]' derivation='Sum' name='[sum:Attrition_Flag_Churned:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Gender:nk]' value='45' />
+            <format attr='font-size' data-class='total' value='12' />
+            <format attr='color' data-class='subtotal' value='#000000' />
+            <format attr='color' data-class='total' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Gender:nk]' value='48' />
+            <format attr='height-header' value='10' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='90' />
+                <format attr='maxheight' value='90' />
+                <format attr='minwidth' value='208' />
+                <format attr='maxwidth' value='208' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Gender:nk]' />
+              <text column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.61469614505767822' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3953038454055786' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Gender:nk]</rows>
+        <cols>([federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk] + [federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk])</cols>
+      </table>
+      <simple-id uuid='{DE26B034-CA48-4D75-B42D-0943AB6744DC}' />
+    </worksheet>
+    <worksheet name='Customers by Age Group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>Customers by Age Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processeddata(analysis3)' name='federated.0qpshyi0h4w42s19zfif11d2y2he' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Age bin size' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='7.0'>
+              <calculation class='tableau' formula='7.0' />
+              <range granularity='1.0' max='10.0' min='2.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0qpshyi0h4w42s19zfif11d2y2he'>
+            <column caption='Card Category' datatype='string' name='[Card_Category]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Customer Age (bin)' datatype='integer' name='[Customer Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Customer_Age]' peg='0' size-parameter='[Parameters].[Parameter 1]' />
+            </column>
+            <column caption='Customer Age' datatype='integer' name='[Customer_Age]' role='measure' type='quantitative' />
+            <column caption='Customer Count' datatype='integer' name='[Customer_Count]' role='measure' type='quantitative' />
+            <column caption='Education Level' datatype='string' name='[Education_Level]' role='dimension' type='nominal' />
+            <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+            <column caption='Marital Status' datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column-instance column='[Card_Category]' derivation='None' name='[none:Card_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Age (bin)]' derivation='None' name='[none:Customer Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Education_Level]' derivation='None' name='[none:Education_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_Count]' derivation='Sum' name='[sum:Customer_Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]' scope='rows' value='false' />
+            <format attr='tick-color' scope='cols' value='#ffffff' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='19' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Customer Age (bin):ok]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Customer Age (bin):ok]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d8d8d8</color>
+                <color>#c0c0c0</color>
+                <color>#a8a8a8</color>
+                <color>#909090</color>
+                <color>#787878</color>
+                <color>#606060</color>
+                <color>#484848</color>
+                <color>#303030</color>
+                <color>#181818</color>
+                <color>#000000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]' />
+              <text column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]</rows>
+        <cols>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Customer Age (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[Customer Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{A5C7C4E2-21BA-44F4-8ECF-06663932B24F}' />
+    </worksheet>
+    <worksheet name='KPI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;KP1&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processeddata(analysis3)' name='federated.0qpshyi0h4w42s19zfif11d2y2he' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qpshyi0h4w42s19zfif11d2y2he'>
+            <column caption='Attrition Count' datatype='integer' name='[Attrition_Flag_Churned]' role='measure' type='quantitative' />
+            <column caption='Churn rate' datatype='real' name='[Calculation_2346445788755791872]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([Attrition_Flag_Churned])/sum([Customer_Count])' />
+            </column>
+            <column caption='Active Customers' datatype='integer' name='[Calculation_2346445788756434945]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([Customer_Count]) - sum([Attrition_Flag_Churned])' />
+            </column>
+            <column caption='Card Category' datatype='string' name='[Card_Category]' role='dimension' type='nominal' />
+            <column caption='Customer Age' datatype='integer' name='[Customer_Age]' role='measure' type='quantitative' />
+            <column caption='Customer Count' datatype='integer' name='[Customer_Count]' role='measure' type='quantitative' />
+            <column caption='Education Level' datatype='string' name='[Education_Level]' role='dimension' type='nominal' />
+            <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+            <column caption='Marital Status' datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column-instance column='[Customer_Age]' derivation='Avg' name='[avg:Customer_Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Card_Category]' derivation='None' name='[none:Card_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Education_Level]' derivation='None' name='[none:Education_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Attrition_Flag_Churned]' derivation='Sum' name='[sum:Attrition_Flag_Churned:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer_Count]' derivation='Sum' name='[sum:Customer_Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2346445788755791872]' derivation='User' name='[usr:Calculation_2346445788755791872:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2346445788756434945]' derivation='User' name='[usr:Calculation_2346445788756434945:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qpshyi0h4w42s19zfif11d2y2he].[usr:Calculation_2346445788755791872:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qpshyi0h4w42s19zfif11d2y2he].[usr:Calculation_2346445788756434945:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qpshyi0h4w42s19zfif11d2y2he].[avg:Customer_Age:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0qpshyi0h4w42s19zfif11d2y2he].[usr:Calculation_2346445788755791872:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0qpshyi0h4w42s19zfif11d2y2he].[usr:Calculation_2346445788756434945:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[:Measure Names]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[usr:Calculation_2346445788755791872:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[avg:Customer_Age:qk]' value='n#,##0;-#,##0' />
+            <format attr='color' data-class='subtotal' value='#f28e2b' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' scope='cols' value='15' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[:Measure Names]' value='#ffffff' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='15' />
+            <format attr='color' value='#000000' />
+            <format attr='font-family' value='TI-Nspire Sans' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffffff'>&lt;</run>
+                <run fontcolor='#ffffff'>[federated.0qpshyi0h4w42s19zfif11d2y2he].[Multiple Values]</run>
+                <run fontcolor='#ffffff'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0qpshyi0h4w42s19zfif11d2y2he].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{6AB6C1E1-CC0F-418C-B8B8-CADFD7A12353}' />
+    </worksheet>
+    <worksheet name='Pie chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Churn Rates by Marital Status</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processeddata(analysis3)' name='federated.0qpshyi0h4w42s19zfif11d2y2he' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qpshyi0h4w42s19zfif11d2y2he'>
+            <column caption='Attrition Count' datatype='integer' name='[Attrition_Flag_Churned]' role='measure' type='quantitative' />
+            <column caption='Card Category' datatype='string' name='[Card_Category]' role='dimension' type='nominal' />
+            <column caption='Education Level' datatype='string' name='[Education_Level]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+            <column caption='Marital Status' datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+            <column-instance column='[Card_Category]' derivation='None' name='[none:Card_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Education_Level]' derivation='None' name='[none:Education_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Attrition_Flag_Churned]' derivation='Sum' name='[pcto:sum:Attrition_Flag_Churned:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Attrition_Flag_Churned]' derivation='Sum' name='[sum:Attrition_Flag_Churned:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Gender:nk]'>
+            <groupfilter function='empty-level' member='[none:Gender:nk]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]</column>
+            <column>[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#f28e2b' />
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]' value='Marital Status'>
+              <formatted-text>
+                <run fontcolor='#ffffff'>Marital Status</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]' value='Card Category'>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff'>Card Category</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' value='Education Level'>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff'>Education Level</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]' value='Income Category'>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff'>Income Category</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]' value='Marital Status'>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff'>Marital Status</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Gender:nk]' value='Gender'>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff'>Gender</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]' />
+              <wedge-size column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' />
+              <text column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[pcto:sum:Attrition_Flag_Churned:qk]' />
+              <text column='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffffff' fontsize='10'>&lt;</run>
+                <run fontcolor='#ffffff' fontsize='10'>[federated.0qpshyi0h4w42s19zfif11d2y2he].[pcto:sum:Attrition_Flag_Churned:qk]</run>
+                <run fontcolor='#ffffff' fontsize='10'>&gt;</run>
+                <run fontcolor='#ffffff' fontsize='10'>Æ&#10;</run>
+                <run fontcolor='#ffffff' fontsize='10'><![CDATA[<[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5932043790817261' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B6A1DF4A-2A11-4AA3-9E74-A1924C396314}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Affect of  demographics on credit card churn rates?'>
+      <style>
+        <style-rule element='parameter-ctrl'>
+          <format attr='color' value='#ffffff' />
+          <format attr='font-weight' value='bold' />
+        </style-rule>
+        <style-rule element='parameter-ctrl-title'>
+          <format attr='color' value='#ffffff' />
+          <format attr='font-weight' value='bold' />
+        </style-rule>
+      </style>
+      <size maxheight='900' maxwidth='1580' minheight='900' minwidth='1580' preset-index='17' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='processeddata(analysis3)' name='federated.0qpshyi0h4w42s19zfif11d2y2he' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Age bin size' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='7.0'>
+          <calculation class='tableau' formula='7.0' />
+          <range granularity='1.0' max='10.0' min='2.0' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.0qpshyi0h4w42s19zfif11d2y2he'>
+        <column caption='Card Category' datatype='string' name='[Card_Category]' role='dimension' type='nominal' />
+        <column caption='Education Level' datatype='string' name='[Education_Level]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+        <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+        <column caption='Marital Status' datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+        <column-instance column='[Card_Category]' derivation='None' name='[none:Card_Category:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Education_Level]' derivation='None' name='[none:Education_Level:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Marital_Status]' derivation='None' name='[none:Marital_Status:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='50' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='49' is-scaled='1' param='/Users/poojalal/Desktop/DATA301/-project-group-individual-Ajneya-Lal/images /DashBoard Background Green.jpg' type-v2='bitmap' w='98988' x='506' y='889'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='13889' id='5' name='KPI' show-title='false' w='78418' x='1519' y='10667' />
+        <zone h='18000' id='8' name='Churn by Gender' w='17911' x='81519' y='10778' />
+        <zone forceUpdate='true' h='6111' id='10' type-v2='text' w='54494' x='1203' y='2444'>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='20'>AFFECT OF DEMOGRAPHICS ON CREDIT CARD  CHURN RATES</run>
+          </formatted-text>
+        </zone>
+        <zone h='39222' id='11' name='Pie chart' w='29367' x='1582' y='27222' />
+        <zone h='10778' id='12' name='Pie chart' pane-specification-id='0' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]' type-v2='color' w='8861' x='1962' y='35222' />
+        <zone h='39222' id='21' name='Customers by Age Group' w='35570' x='32722' y='27222' />
+        <zone h='7444' id='22' mode='slider' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='10127' x='56519' y='28889' />
+        <zone h='8444' id='23' name='Customers by Age Group' pane-specification-id='0' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]' type-v2='color' w='8861' x='57278' y='36667' />
+        <zone h='28667' id='34' name='Churn Rate by Education' w='29177' x='1456' y='68889' />
+        <zone h='37444' id='35' name='Churn Rate by Age Group ' w='28291' x='69747' y='28111' />
+        <zone h='8444' id='36' name='Churn Rate by Age Group ' pane-specification-id='2' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' type-v2='color' w='8861' x='88797' y='30000' />
+        <zone h='28556' id='37' name='Churn Rate by Income Category' w='34684' x='33354' y='68778' />
+        <zone h='28333' id='38' name='Churn Rate by Card Category' w='28481' x='69747' y='68556' />
+        <zone h='8889' id='39' name='Churn Rate by Card Category' pane-specification-id='0' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]' type-v2='color' w='6456' x='91456' y='79444' />
+        <zone h='13222' id='40' mode='checkdropdown' name='Pie chart' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]' type-v2='filter' values='database' w='8924' x='60380' y='3333' />
+        <zone h='19556' id='41' mode='checkdropdown' name='Pie chart' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' type-v2='filter' values='database' w='9051' x='70127' y='3444' />
+        <zone h='17444' id='42' mode='checkdropdown' name='Pie chart' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]' type-v2='filter' values='database' w='8544' x='80000' y='3444' />
+        <zone h='13222' id='43' mode='checkdropdown' name='Pie chart' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]' type-v2='filter' values='database' w='8481' x='89241' y='3556' />
+        <zone h='9000' id='44' mode='checkdropdown' name='Pie chart' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Gender:nk]' type-v2='filter' values='database' w='8734' x='51013' y='3556' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2950' minheight='2950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='61' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='60' param='vert' type-v2='layout-flow' w='98988' x='506' y='889'>
+                <zone fixed-size='280' h='98222' id='49' is-fixed='true' is-scaled='1' param='/Users/poojalal/Desktop/DATA301/-project-group-individual-Ajneya-Lal/images /DashBoard Background Green.jpg' type-v2='bitmap' w='98988' x='506' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='6111' id='10' type-v2='text' w='54494' x='1203' y='2444'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#ffffff' fontsize='20'>AFFECT OF DEMOGRAPHICS ON CREDIT CARD  CHURN RATES</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='125' h='13889' id='5' is-fixed='true' name='KPI' show-title='false' w='78418' x='1519' y='10667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='162' h='18000' id='8' is-fixed='true' name='Churn by Gender' w='17911' x='81519' y='10778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13222' id='40' mode='checkdropdown' name='Pie chart' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]' type-v2='filter' values='database' w='8924' x='60380' y='3333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19556' id='41' mode='checkdropdown' name='Pie chart' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' type-v2='filter' values='database' w='9051' x='70127' y='3444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='17444' id='42' mode='checkdropdown' name='Pie chart' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]' type-v2='filter' values='database' w='8544' x='80000' y='3444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13222' id='43' mode='checkdropdown' name='Pie chart' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]' type-v2='filter' values='database' w='8481' x='89241' y='3556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9000' id='44' mode='checkdropdown' name='Pie chart' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Gender:nk]' type-v2='filter' values='database' w='8734' x='51013' y='3556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39222' id='11' is-fixed='true' name='Pie chart' w='29367' x='1582' y='27222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10778' id='12' name='Pie chart' pane-specification-id='0' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]' type-v2='color' w='8861' x='1962' y='35222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39222' id='21' is-fixed='true' name='Customers by Age Group' w='35570' x='32722' y='27222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8444' id='23' name='Customers by Age Group' pane-specification-id='0' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]' type-v2='color' w='8861' x='57278' y='36667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37444' id='35' is-fixed='true' name='Churn Rate by Age Group ' w='28291' x='69747' y='28111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8444' id='36' name='Churn Rate by Age Group ' pane-specification-id='2' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' type-v2='color' w='8861' x='88797' y='30000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7444' id='22' mode='slider' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='10127' x='56519' y='28889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='255' h='28333' id='38' is-fixed='true' name='Churn Rate by Card Category' w='28481' x='69747' y='68556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8889' id='39' name='Churn Rate by Card Category' pane-specification-id='0' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]' type-v2='color' w='6456' x='91456' y='79444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='257' h='28556' id='37' is-fixed='true' name='Churn Rate by Income Category' w='34684' x='33354' y='68778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='258' h='28667' id='34' is-fixed='true' name='Churn Rate by Education' w='29177' x='1456' y='68889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0A6C53C4-F7FC-422B-A16F-D6CE72E4FA1E}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]' type='filter' />
+            <card param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]' type='filter' />
+            <card param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]' type='filter' />
+            <card param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Education_Level:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AA9766D3-EC51-42B4-9BC8-E379BBAAF202}' />
+    </window>
+    <window class='worksheet' name='Churn by Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BE0F74E2-D513-40A6-9B3E-0A83F7679773}' />
+    </window>
+    <window class='worksheet' name='1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{585874F7-35A8-46F6-9666-3320CF84D363}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Affect of  demographics on credit card churn rates?'>
+      <viewpoints>
+        <viewpoint name='Churn Rate by Age Group '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn Rate by Card Category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn Rate by Education'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn Rate by Income Category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn by Gender' />
+        <viewpoint name='Customers by Age Group'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Pie chart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='44' />
+      <simple-id uuid='{03ADB9DC-E0BB-4C24-9EE5-C38AD1BA551A}' />
+    </window>
+    <window class='worksheet' name='Pie chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Marital_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4043A475-DCA3-4943-A452-1D2B2BEFD242}' />
+    </window>
+    <window class='worksheet' name='Customers by Age Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Customer_Count:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{5913038B-7B04-4FEF-A56F-8052A51DEEB8}' />
+    </window>
+    <window class='worksheet' name='Churn Rate by Age Group '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='2' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[sum:Attrition_Flag_Churned:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D59934FE-22D6-46DA-8EC1-19F62520E444}' />
+    </window>
+    <window class='worksheet' name='Churn Rate by Education'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{10018B0C-FEF4-43AE-8365-10FCB11AEFC9}' />
+    </window>
+    <window class='worksheet' name='Churn Rate by Income Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Income_Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{331721E0-D451-47A0-83F3-602A47FA7EC0}' />
+    </window>
+    <window class='worksheet' name='Churn Rate by Card Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0qpshyi0h4w42s19zfif11d2y2he].[none:Card_Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{ED806237-B1A4-4821-AB0D-EB7FBA1EA333}' />
+    </window>
+  </windows>
+</workbook>
