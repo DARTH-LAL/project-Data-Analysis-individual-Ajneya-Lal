@@ -16,9 +16,10 @@ The graph above shows that the data consists mainly of existing customers. Thus 
 
 From the graph above, the median age of customers who have churned is slightly higher than that of customers who have not churned. Thus, indicating a correlation between age and churn rate. However, the correlation requires further analysis for a concrete conclusion.
 
-The third plot used to analyse correlations is a box plot to portray the relationship between the customer credit limit and churn rate. This graph helps analyse the relationship between the credit limit and customer churn rates.
+The second plot used to analyse correlations is a box plot to portray the relationship between the customer credit limit and churn rate. This graph helps analyse the relationship between the credit limit and customer churn rates.
 
-![Churn Rates Plot](/Users/poojalal/Desktop/DATA301/-project-group-group20A/images/Churn_rates_plot.png)
+
+<img src=https://github.com/ubco-W2022T2-data301/-project-group-group20A/blob/main/images%20/Churn_rates_plot.png />
 
 From the graph above, we can see that the attrited customers have significantly more outliers than existing customers. Thus, indicating high variability in the behaviour of attrited customers.
 
